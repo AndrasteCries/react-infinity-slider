@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import Slider from './Components/Slider'
 import './App.css';
 
-function App() {
+export default function App() {
+  const elem = [{ key: 1, color: "1" },
+  { key: 2, color: "2" },
+  { key: 3, color: "3" },
+  { key: 4, color: "4" },
+  { key: 5, color: "5" },
+  { key: 6, color: "6" }]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello world!</h1>
+      <Slider elements={elem}/>
     </div>
   );
 }
-
-export default App;
